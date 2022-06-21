@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       initialRoute: 'home',
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       routes: {
         'basic_design': (_) => const BasicDesignScreen(),
         'scroll_design': (_) => const ScrollDesignScreen(),

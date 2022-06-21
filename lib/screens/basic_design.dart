@@ -35,7 +35,7 @@ class Title extends StatelessWidget {
           Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
             Text('Oeschinen Lake Campground',
                 style: TextStyle(fontWeight: FontWeight.bold)),
-            Text('kendersteg, Switzerland',
+            Text('Kendersteg, Switzerland',
                 style: TextStyle(color: Colors.black45)),
           ]),
           Expanded(child: Container()),

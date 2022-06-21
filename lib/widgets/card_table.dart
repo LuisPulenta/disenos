@@ -1,15 +1,13 @@
 import 'dart:ui';
-
-import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 
 class CardTable extends StatelessWidget {
   const CardTable({Key? key}) : super(key: key);
-
+//------------------------- Pantalla ------------------------------------
   @override
   Widget build(BuildContext context) {
     return Table(
-      children: [
+      children: const [
         TableRow(children: [
           _SingleCard(
             icon: Icons.all_inbox,
@@ -63,6 +61,8 @@ class CardTable extends StatelessWidget {
   }
 }
 
+//------------------------- SingleCard ------------------------------------
+
 class _SingleCard extends StatelessWidget {
   final IconData icon;
   final Color color;
@@ -87,6 +87,9 @@ class _SingleCard extends StatelessWidget {
             ),
             radius: 30,
           ),
+          const SizedBox(
+            height: 15,
+          ),
           Text(
             text,
             style: TextStyle(color: color, fontSize: 18),
@@ -97,6 +100,8 @@ class _SingleCard extends StatelessWidget {
   }
 }
 
+//------------------------- _CardBackground ------------------------------------
+
 class _CardBackground extends StatelessWidget {
   final Widget child;
 
@@ -105,7 +110,7 @@ class _CardBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(15),
+      margin: const EdgeInsets.all(15),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20),
         child: BackdropFilter(
@@ -115,7 +120,7 @@ class _CardBackground extends StatelessWidget {
             height: 180,
             width: 180,
             decoration: BoxDecoration(
-              color: Color.fromRGBO(62, 66, 107, 0.7),
+              color: const Color.fromRGBO(62, 66, 107, 0.7),
               borderRadius: BorderRadius.circular(20),
             ),
             child: child,
